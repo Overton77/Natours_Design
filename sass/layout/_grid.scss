@@ -5,11 +5,11 @@
     max-width: 50rem;
     padding: 0 3rem;
   }
-  // this specifies the max width of the row
+  
 
   margin: 0 auto;
 
-  //trick to center block elements inside block elements
+ 
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
@@ -21,7 +21,7 @@
 
   @include clearfix;
 
-  //attribute selector
+  
 
   [class^='col-'] {
     float: left;
