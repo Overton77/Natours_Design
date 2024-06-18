@@ -8,18 +8,13 @@ $theme-colors: (
   'info': #17a2b8,
 );
 
-@each $color-name
-  in map-keys($theme-colors)
-  // this iterates over the $theme-colors map returning a class dynamically that has the colors you can then use .text-success in your html
-
-{
+@each $color-name in map-keys($theme-colors) {
   .text-#{$color-name} {
     color: map-get($theme-colors, $color-name);
   }
 }
 
 @mixin generate-grid-classes($count) {
-  // this will generate row 1 through 12 and column 1 through 12 and now you can use .col-1 inside of your html
   @for $i from 1 through $count {
     .col-#{$i} {
       width: 100% / $count * $i;

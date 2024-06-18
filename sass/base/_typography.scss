@@ -1,7 +1,6 @@
 body {
   font-family: 'Latto', sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: #777;
   padding: 3rem;
@@ -20,7 +19,6 @@ body {
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 2s;
-    /*animation-delay: 3s;*/
     animation-timing-function: ease-out;
 
     @include respond(phone) {
@@ -54,7 +52,7 @@ body {
 
   -webkit-background-clip: text;
   color: transparent;
-  // you can clip by the element and then make it transparent so that its outline gets colored in by the background color
+
   letter-spacing: 2px;
   transition: all 0.2s;
 

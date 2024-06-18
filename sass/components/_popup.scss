@@ -9,8 +9,7 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  // don't do display none
-  // with opacity and visibility we can animate and work with it
+
   transition: all 0.3s;
 
   @supports (
@@ -47,8 +46,6 @@
     @include center-horizontal-vertical;
 
     width: 75%;
-
-    // this is for testing purposes
 
     background-color: $color-white;
     box-shadow: add-box-shadow(0, 2rem, 4rem, $color-black, 0.2);
